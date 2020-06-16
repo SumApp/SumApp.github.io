@@ -1,16 +1,8 @@
-<!DOCTYPE html>
-<html lang="{{ site.lang | default: 'en-US' }}">
-
-{% include head.html %}
-
-<body class="mdl-demo mdl-color--grey-100 mdl-color-text--grey-700 mdl-base">
-  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-    {% include header.html %}
-    <main class="mdl-layout__content">
-      {{ content }}
-      {% include footer.html %}
-    </main>
-  </div>
-</body>
-
-</html>
+---
+layout: default
+---
+<section class="section--center mdl-grid mdl-grid--no-spacing">
+    <div class="mdl-cell mdl-cell--12-col">
+        {{ content }}
+    </div>
+</section>
