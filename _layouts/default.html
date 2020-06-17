@@ -2,7 +2,7 @@
 layout: base
 ---
 <div class="col-sm-4">
-    {% assign collection_items = site.collections | find: "label", page.collection %}
+    {% assign collection_items = site.collections | where: "label", page.collection %}
     {{page.collection}}
     {{collection_items[0] | jsonify}}
     {% assign collection = collection_items[0] %}
