@@ -3,6 +3,7 @@ layout: base
 ---
 <div class="col-sm-4">
     {% assign collection = site.collections | find: "label", page.collection %}
+    {{ collection | jsonify }}
     <h3>{{collection.title}}</h3>
     <ul class="nav nav-pills flex-column">
         {% for link in collection.docs %}
