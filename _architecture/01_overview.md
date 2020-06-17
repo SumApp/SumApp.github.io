@@ -2,4 +2,5 @@
 title: Overview
 permalink: /:collection/
 ---
-This is overview
+The below diagram explains the overall architecture of SumApp -
+![](/assets/img/Architecture Overview.png)
