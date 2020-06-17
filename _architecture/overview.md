@@ -1,6 +1,6 @@
 ---
 title: Overview
-permalink: /:collection/
+permalink: /:collection
 ---
 # Section 1
 This is overview
