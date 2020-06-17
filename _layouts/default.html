@@ -2,7 +2,8 @@
 layout: base
 ---
 <div class="col-sm-4">
-    {% assign collection = site.collections | find: "label", page.collection %}
+    {% assign collection_items = site.collections | find: "label", page.collection %}
+    {% assign collection = collection_items[0] %}
     {{ collection | jsonify }}
     <h3>{{collection.title}}</h3>
     <ul class="nav nav-pills flex-column">
