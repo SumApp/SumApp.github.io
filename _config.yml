@@ -13,3 +13,4 @@ defaults:
 collections:
   architecture:
     output: true
+    title: Architecture
