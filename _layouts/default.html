@@ -3,8 +3,6 @@ layout: base
 ---
 <div class="col-sm-4">
     {% assign collection_items = site.collections | where: "label", page.collection %}
-    {{page.collection}}
-    {{collection_items[0] | jsonify}}
     {% assign collection = collection_items[0] %}
     <h3>{{collection.title}}</h3>
     <ul class="nav nav-pills flex-column">
@@ -18,8 +16,10 @@ layout: base
         </li>
         {% endfor %}
     </ul>
-    <hr class="d-sm-none">
+    <hr class="d-sm-none"/>
 </div>
 <div class="col-sm-8">
+    {% include toc.html html=content %}
+    <hr/>
     {{ content }}
 </div>
