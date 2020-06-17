@@ -1,9 +1,9 @@
 ---
 layout: index
 ---
-We are migrating from Google Firebase Platform to Open Source technology choices.
-Stay tuned...
+<div class="sum-home">
+<span>We are migrating from Google Firebase Platform to Open Source technology choices.
+Stay tuned...</span>
 
-<div class="docu">
-![](/assets/img/under-construction.jpg)
+![Under Construction](/assets/img/under-construction.jpg)
 </div>
