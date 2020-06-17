@@ -1,4 +1,19 @@
 ---
 layout: base
 ---
-{{ content }}
+<div class="col-sm-4">
+    {% assign filtered_collections = site.collections | where: "label", page.collection %}
+    {% assign collection = filtered_collections[0] %}
+    <h3>{{collection.title}}</h3>
+    <ul class="nav nav-pills flex-column">
+        {% for link in collection.docs %}
+        <li class="nav-item">
+            <a class="nav-link active" href="{{link.url}}">{{link.title}}</a>
+        </li>
+        {% endfor %}
+    </ul>
+    <hr class="d-sm-none">
+</div>
+<div class="col-sm-8">
+    {{ content }}
+</div>
