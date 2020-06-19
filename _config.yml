@@ -16,4 +16,7 @@ collections:
     title: Architecture
   documentation:
     output: true
-    title: Documentation    
+    title: Documentation
+  concepts:
+    output: true
+    title: Concepts    
