@@ -14,9 +14,12 @@ collections:
   architecture:
     output: true
     title: Architecture
+    icon: cubes
   documentation:
     output: true
     title: Documentation
+    icon: book
   concepts:
     output: true
-    title: Concepts    
+    title: Concepts
+    icon: university
