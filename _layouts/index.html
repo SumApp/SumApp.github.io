@@ -20,7 +20,7 @@ layout: base
     <div class="container">
         <div class="docs-overview py-5">
             <div class="row justify-content-center">
-                {% for collection in site.collections | where_exp:"coll", "coll.label != 'posts' %}
+                {% for collection in site_collections %}
                 <div class="col-12 col-lg-4 py-3">
                     <div class="card shadow-sm">
                         <div class="card-body">
