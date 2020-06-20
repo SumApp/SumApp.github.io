@@ -9,7 +9,7 @@
         <ul class="section-items list-unstyled nav flex-column pb-3">
             {% for collection in site.collections | where_exp:"coll", "coll.label != 'posts'"%}
             <li class="nav-item section-title"><a class="nav-link active" href="/{{collection.label}}"><span
-                        class="theme-icon-holder mr-2"><i class="fas fa-map-signs"></i></span>{{collection.title}}</a>
+                        class="theme-icon-holder mr-2"><i class="fas fa-{{collection.icon}}"></i></span>{{collection.title}}</a>
             </li>
             {% for link in collection.docs %}
             <li class="nav-item"><a class="nav-link" href="{{link.url}}">{{link.title}}</a></li>
