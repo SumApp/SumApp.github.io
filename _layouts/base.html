@@ -2,7 +2,6 @@
 <html lang="{{ site.lang | default: 'en-US' }}">
 
 {% include head.html %}
-{% assign site_collections = (site.collections | where_exp:"coll", "coll.label != 'posts'") %}
 
 <body class="{{page.root-class}}">
     {% include header.html %}
