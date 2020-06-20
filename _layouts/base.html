@@ -3,6 +3,7 @@
 
 {% include head.html %}
 {% assign site_collections = (site.collections | where_exp:"coll", "coll.label != 'posts'") %}
+{{ site_collections | jsonify }}
 
 <body class="{{page.root-class}}">
     {% include header.html %}
