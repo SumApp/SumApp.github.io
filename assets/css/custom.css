@@ -1,3 +1,6 @@
 .docs-section img {
     max-width: 100%;
 }
+.index .top-search-box{
+    visibility: hidden;
+}
