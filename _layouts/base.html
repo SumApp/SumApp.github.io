@@ -14,7 +14,7 @@
     <script src="/assets/plugins/bootstrap/js/bootstrap.min.js"></script>
 
     <!-- Page Specific JS -->
-    {% include {{ "scripts/" + page.layout + ".html" }} %}
+    {% include_relative {{ "scripts/" + page.layout + ".html" }} %}
 </body>
 
 </html>
