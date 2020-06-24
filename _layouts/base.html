@@ -3,11 +3,18 @@
 
 {% include head.html %}
 
-<body class="{{page.root-class}}">
+<body class="{{layout.root-class}}">
     {% include header.html %}
 
     {{ content }}
 
+    <!-- Javascript -->
+    <script src="/assets/plugins/jquery-3.4.1.min.js"></script>
+    <script src="/assets/plugins/popper.min.js"></script>
+    <script src="/assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Page Specific JS -->
+    {% include {{ "scripts/" + page.layout }} %}
 </body>
 
 </html>
